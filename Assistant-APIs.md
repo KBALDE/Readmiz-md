@@ -1,13 +1,13 @@
-# GPTs Introduction
+### Assistant API Introduction
+Assistant APIs are not GPTs. 
 
-
-Can be built by anyone and pushed at the store !!!
+More capabilities for developpers with Assistant APIs.
 
 They are AI Agents. 
 
 They can use tools and so on.
 
-## how to build an Agent GPT
+#### How to build an Assistant?
 Let'zs say I wzant to build an GPT that can help me write or correct a text.
 How to do that ?
 
@@ -23,17 +23,15 @@ Let's start doing it.
 
 We will start by understanding what OpenAI Assistant API offer.
 
-### Assistant API : give it a name and instruction. You can let it use tools like code interpreter, Retrieval, and Function Calling.
+**Assistant API** : give it a name and instruction. You can let it use tools like code interpreter, Retrieval, and Function Calling.
 - Code interepreter is a packeged tool that help you use python libraries to deliver compute and graphics.
 - Retrieval is a packaged tool that helps you query your data to augment your GPT's response.
 - Function Calling is a way of giving you the poissibility to create custom tool and have them being called as needed. 
 
-### Thread, it is a flow of conversation. It is created when  a user start a conversation.
+**Thread**, it is a flow of conversation. It is created when  a user start a conversation.
 You add a message to a thread.
 
-### Run the assistant to the Thread to trigger response.
-
-
+**Run** the assistant to the Thread to trigger response.
 ```python
 assistant = client.beta.assistants.create(
     name="Math Tutor",
@@ -63,10 +61,8 @@ client.beta.assistants.create(
 An Assistant has a name, intructions, tools, models and some more parameters
 
 
-model: ID of the model to use. You can use the
-   
-
-description: The description of the assistant. The maximum length is 512 characters.
+- model: ID of the model to use. You can use the
+- description: The description of the assistant. The maximum length is 512 characters.
 
 - file_ids: A list of [file](https://platform.openai.com/docs/api-reference/files) IDs
       
